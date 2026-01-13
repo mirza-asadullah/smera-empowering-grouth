@@ -1,15 +1,30 @@
 import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
-import Hero from './components/Hero'
+import Home from './pages/Home'
+import About from './pages/About'
+import Services from './pages/Services'
+import Products from './pages/Products'
+import Contact from './pages/Contact'
 import './index.css'
+import Footer from './components/Footer'
 
 export default function App() {
   return (
-    <div className="app-root">
-      <Header />
-      <main>
-        <Hero />
-      </main>
-    </div>
+    <Router>
+      <div className="app-root">
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   )
 }

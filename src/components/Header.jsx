@@ -1,18 +1,22 @@
 import React from 'react'
+import { NavLink, Link } from 'react-router-dom'
 
 export default function Header() {
   return (
     <header className="site-header">
-      <div className="container header-inner">
+      <div className="container-header header-inner">
         <div className="brand">
-          <img src="/src/assets/logo.png" alt="logo" className="logo" />
+          <Link to="/">
+            <img src="/src/assets/logo.png" alt="logo" className="logo" width={120} height={64} />
+          </Link>
         </div>
         <nav className="nav">
-          <a href="#" className="nav-link active">HOME</a>
-          <a href="#" className="nav-link">About</a>
-          <a href="#" className="nav-link">Services</a>
-          <a href="#" className="nav-link">Products</a>
-          <a href="#" className="btn btn-cta">Contact</a>
+          <NavLink to="/" end className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>Home</NavLink>
+          <NavLink to="/about" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>About</NavLink>
+          <NavLink to="/services" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>Services</NavLink>
+          <NavLink to="/e-learning-portal" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>E-Learning Portal</NavLink>
+          <NavLink to="/products" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>Products</NavLink>
+          <NavLink to="/contact" className="btn btn-cta">Contact</NavLink>
         </nav>
       </div>
     </header>
