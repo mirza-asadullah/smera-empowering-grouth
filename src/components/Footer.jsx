@@ -1,4 +1,10 @@
 import React from "react";
+import logo from "../assets/logo.png";
+import facebook from "../assets/facebook.png";
+import twitter from "../assets/twitter.png";
+import instagram from "../assets/instagram.png";
+import linkedin from "../assets/linkedin.png";
+import searchbutton from "../assets/searchbutton.png";
 
 export default function Footer() {
   return (
@@ -7,40 +13,20 @@ export default function Footer() {
         {/* Brand Column */}
         <div className="footer-brand">
           <div className="brand-inner">
-            <img
-              src="/src/assets/logo.png"
-              alt="SMERA Logo"
-              className="footer-logo"
-            />
+            <img src={logo} alt="SMERA Logo" className="footer-logo" />
           </div>
           <div className="social-icons">
             <a href="#" className="social-btn" aria-label="Facebook">
-              <img
-                src="/src/assets/facebook.png"
-                alt="facebook"
-                className="social-img"
-              />
+              <img src={facebook} alt="facebook" className="social-img" />
             </a>
             <a href="#" className="social-btn" aria-label="Twitter">
-              <img
-                src="/src/assets/twitter.png"
-                alt="twitter"
-                className="social-img"
-              />
+              <img src={twitter} alt="twitter" className="social-img" />
             </a>
             <a href="#" className="social-btn" aria-label="Instagram">
-              <img
-                src="/src/assets/instagram.png"
-                alt="instagram"
-                className="social-img"
-              />
+              <img src={instagram} alt="instagram" className="social-img" />
             </a>
             <a href="#" className="social-btn" aria-label="LinkedIn">
-              <img
-                src="/src/assets/linkedin.png"
-                alt="linkedin"
-                className="social-img"
-              />
+              <img src={linkedin} alt="linkedin" className="social-img" />
             </a>
           </div>
         </div>
@@ -85,11 +71,7 @@ export default function Footer() {
               className="subscribe-input"
             />
             <button className="subscribe-btn" aria-label="Send">
-              <img
-                src="/src/assets/searchbutton.png"
-                alt="send"
-                className="send-img"
-              />
+              <img src={searchbutton} alt="send" className="send-img" />
             </button>
           </div>
         </div>

@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import sliderbg from "../assets/sliderbg.jpg";
 import ellipse from "../assets/ellipse.png";
 import vectorQuote from "../assets/slidercomma.png";
+import vector from "../assets/vector.png";
 
 const testimonials = [
   {
@@ -136,7 +137,7 @@ function Testimonials() {
         <h2 className="testimonials-title">
           Testimonials That
           <sup className="title-sup">
-            <img src="src/assets/vector.png" alt="checkmark" />
+            <img src={vector} alt="checkmark" />
           </sup>
           <br />
           Speak to <span className="accent-text">Our Results</span>
