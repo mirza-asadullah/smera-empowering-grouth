@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 export default function Footer() {
   return (
@@ -7,20 +7,40 @@ export default function Footer() {
         {/* Brand Column */}
         <div className="footer-brand">
           <div className="brand-inner">
-            <img src="/src/assets/logo.png" alt="SMERA Logo" className="footer-logo" />
+            <img
+              src="/src/assets/logo.png"
+              alt="SMERA Logo"
+              className="footer-logo"
+            />
           </div>
           <div className="social-icons">
             <a href="#" className="social-btn" aria-label="Facebook">
-              <img src="/src/assets/facebook.png" alt="facebook" className="social-img" />
+              <img
+                src="/src/assets/facebook.png"
+                alt="facebook"
+                className="social-img"
+              />
             </a>
             <a href="#" className="social-btn" aria-label="Twitter">
-              <img src="/src/assets/twitter.png" alt="twitter" className="social-img" />
+              <img
+                src="/src/assets/twitter.png"
+                alt="twitter"
+                className="social-img"
+              />
             </a>
             <a href="#" className="social-btn" aria-label="Instagram">
-              <img src="/src/assets/instagram.png" alt="instagram" className="social-img" />
+              <img
+                src="/src/assets/instagram.png"
+                alt="instagram"
+                className="social-img"
+              />
             </a>
             <a href="#" className="social-btn" aria-label="LinkedIn">
-              <img src="/src/assets/linkedin.png" alt="linkedin" className="social-img" />
+              <img
+                src="/src/assets/linkedin.png"
+                alt="linkedin"
+                className="social-img"
+              />
             </a>
           </div>
         </div>
@@ -29,10 +49,18 @@ export default function Footer() {
         <div className="footer-nav">
           <h4>Navigation</h4>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/products">Products</a></li>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/about">About Us</a>
+            </li>
+            <li>
+              <a href="/services">Services</a>
+            </li>
+            <li>
+              <a href="/products">Products</a>
+            </li>
           </ul>
         </div>
 
@@ -57,7 +85,11 @@ export default function Footer() {
               className="subscribe-input"
             />
             <button className="subscribe-btn" aria-label="Send">
-              <img src="/src/assets/searchbutton.png" alt="send" className="send-img" />
+              <img
+                src="/src/assets/searchbutton.png"
+                alt="send"
+                className="send-img"
+              />
             </button>
           </div>
         </div>
@@ -67,7 +99,9 @@ export default function Footer() {
       <div className="footer-bottom">
         <div className="container">
           <div className="bottom-row">
-            <div className="bottom-left">Copyright© 2025 SMERA. All Rights Reserved.</div>
+            <div className="bottom-left">
+              Copyright© 2025 SMERA. All Rights Reserved.
+            </div>
             <div className="bottom-right">
               <a href="#">User Terms &amp; Conditions</a>
               <a href="#">Privacy Policy</a>
@@ -76,5 +110,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

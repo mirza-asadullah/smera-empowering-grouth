@@ -1,18 +1,21 @@
 {
   "rules": {
-    "at-rule-no-unknown": [true, {
-      "ignoreAtRules": [
-        "tailwind",
-        "apply",
-        "variants",
-        "responsive",
-        "screen",
-        "layer",
-        "tailwindcss",
-        "container",
-        "config"
-      ]
-    }]
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "tailwind",
+          "apply",
+          "variants",
+          "responsive",
+          "screen",
+          "layer",
+          "tailwindcss",
+          "container",
+          "config"
+        ]
+      }
+    ]
   },
   "customSyntax": "postcss-scss"
 }

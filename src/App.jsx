@@ -1,14 +1,14 @@
-import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Header from './components/Header'
-import Home from './pages/Home'
-import About from './pages/About'
-import Services from './pages/Services'
-import Products from './pages/Products'
-import Contact from './pages/Contact'
-import ELearning from './pages/ELearning'
-import './index.css'
-import Footer from './components/Footer'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Products from "./pages/Products";
+import Contact from "./pages/Contact";
+import ELearning from "./pages/ELearning";
+import "./index.css";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -28,5 +28,5 @@ export default function App() {
         <Footer />
       </div>
     </Router>
-  )
+  );
 }
