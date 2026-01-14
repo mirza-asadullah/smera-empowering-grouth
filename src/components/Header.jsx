@@ -4,6 +4,7 @@ import { NavLink, Link } from "react-router-dom";
 export default function Header() {
   return (
     <header className="site-header">
+      <div className="heder-border">
       <div className="container-header header-inner">
         <div className="brand">
           <Link to="/">
@@ -52,6 +53,7 @@ export default function Header() {
             Contact
           </NavLink>
         </nav>
+      </div>
       </div>
     </header>
   );
