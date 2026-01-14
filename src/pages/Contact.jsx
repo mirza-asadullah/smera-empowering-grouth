@@ -29,7 +29,7 @@ export default function Contact() {
                 <div className="container">
                     <h1 className="contact-title">CONTACT US</h1>
 
-                    <form className="contact-form" onSubmit={handleSubmit}>
+                    <form  onSubmit={handleSubmit}>
                         <div className="form-grid">
                             {/* Left Column */}
                             <div className="form-column">
