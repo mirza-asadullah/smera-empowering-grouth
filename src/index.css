@@ -151,7 +151,6 @@ body {
 .hero-left {
 	/* Align with the standard container (5% margin + 84px padding) to match header/footer */
 	padding-left: calc(5% + 84px);
-	padding-right: 250px;
 }
 
 .kicker {
@@ -168,9 +167,10 @@ body {
 
 .lead {
 	color: var(--muted);
-	font-size: 16px;
+	font-size: 20px;
 	max-width: 560px;
 	color: #fff;
+	line-height: 1.8;
 }
 
 .ctas {
@@ -189,7 +189,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	font-weight: 600;
+	font-weight: bold;
 }
 
 .btn-primary {
@@ -851,7 +851,7 @@ body {
 .why-smera-desc {
 	color: #111;
 	font-size: 18px;
-	line-height: 2.7;
+	line-height: 2.0;
 	margin: 0 0 48px;
 	max-width: 480px;
 	font-weight: 500;
@@ -1492,7 +1492,7 @@ body {
 }
 
 .mission-label {
-	color: var(--accent);
+	color: #00A86B;
 	font-size: 13px;
 	font-weight: 700;
 	letter-spacing: 1px;
@@ -1518,7 +1518,7 @@ body {
 }
 
 .mission-title .accent-text {
-	color: var(--accent);
+	color: #00A86B;
 }
 
 .mission-desc {
@@ -1560,20 +1560,22 @@ body {
 }
 
 .core-services-grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 32px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 40px 20px;
 }
 
 .service-card {
 	background: rgba(30, 30, 30, 0.6);
-	border: 1px solid rgba(255, 255, 255, 0.1);
+
 	border-radius: 16px;
 	padding: 32px 24px;
 	transition: all 0.3s;
 	width: 400px;
 	height: 400px;
 }
+
 
 .service-card:hover {
 	border-color: var(--accent);
@@ -1605,7 +1607,7 @@ body {
 }
 
 .service-tagline {
-	color: var(--accent);
+	color: #10B981;
 	font-size: 22px;
 	margin-bottom: 16px;
 }
@@ -1630,7 +1632,7 @@ body {
 	position: absolute;
 	left: 0;
 	top: 0;
-	color: var(--accent);
+	color: #10B981;
 	font-weight: 700;
 	line-height: 1;
 }
@@ -1792,7 +1794,7 @@ body {
 	display: grid;
 	grid-template-columns: 60px 1fr 60px;
 	gap: 20px;
-	align-items: center;
+	align-items: start;
 	margin-bottom: 32px;
 	padding: 50px 24px;
 	background: black;
@@ -1805,26 +1807,28 @@ body {
 	color: var(--accent);
 	font-size: 18px;
 	font-weight: 700;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .step-content h3 {
 	color: #fff;
-	font-size: 18px;
+	font-size: 24px;
 	font-weight: 600;
 	margin: 0 0 6px;
 }
 
 .step-content p {
 	color: var(--muted);
-	font-size: 14px;
+	font-size: 20px;
 	margin: 0;
 	line-height: 1.5;
 }
 
 .step-icon {
 	font-size: 28px;
-	width: 100%;
-	height: 100%;
+	width: 120%;
+	margin-right: 20px;
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
@@ -1896,7 +1900,7 @@ body {
 
 .btn-get-started {
 	background: var(--accent);
-	color: #000;
+	color: white;
 	padding: 14px 32px;
 	border-radius: 8px;
 	border: none;
@@ -1932,10 +1936,12 @@ body {
 	.services-hero-inner {
 		grid-template-columns: 1fr;
 	}
-.roadmap-section {
-	padding: 0px 0 40px;
-	background: #000;
-}
+
+	.roadmap-section {
+		padding: 0px 0 40px;
+		background: #000;
+	}
+
 	.core-services-grid {
 		grid-template-columns: 1fr;
 	}
@@ -2080,10 +2086,12 @@ body {
 		grid-template-columns: 1fr;
 		gap: 20px;
 	}
-.services-hero {
-	padding: 40px 0;
-	background: linear-gradient(90.05deg, #000000 0.03%, #0d110f 99.95%);
-}
+
+	.services-hero {
+		padding: 40px 0;
+		background: linear-gradient(90.05deg, #000000 0.03%, #0d110f 99.95%);
+	}
+
 	.contact-title {
 		font-size: 36px;
 	}
@@ -2490,9 +2498,9 @@ body {
 	width: "50%";
 	padding: "60px";
 	border-radius: "8px";
-	display: "flex";			
+	display: "flex";
 	flex-direction: "column";
-	align-items: "center";	
+	align-items: "center";
 	justify-content: "center";
 }
 
@@ -3655,4 +3663,13 @@ body {
 	.menu-toggle {
 		display: block;
 	}
+}
+/* Autofill override for dark theme */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px black inset !important;
+    -webkit-text-fill-color: white !important;
+    transition: background-color 5000s ease-in-out 0s;
 }

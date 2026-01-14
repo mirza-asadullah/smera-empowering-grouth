@@ -39,9 +39,9 @@ export default function About() {
             <p className="about-desc">
               SMERA is a Research & Development-driven SME advancement center
               established through a strategic collaboration between Winvest and
-              Empire Lifestyle.We research, test, localize, and deploy modern
+              Empire Lifestyle. We research, test, localize, and deploy modern
               SME solutions that enhance productivity, reduce operational costs,
-              and enable sustainable industrial growth across Pakistan.By
+              and enable sustainable industrial growth across Pakistan. By
               combining applied research with on-ground implementation, SMERA
               bridges the gap between theory and execution, helping SMEs
               transition from labor-intensive models to technology-enabled,

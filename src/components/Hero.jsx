@@ -59,7 +59,7 @@ export default function Hero() {
           <div>
             <p className="tagline-text">
               Driving SME modernization through applied research, localized
-              technology, and real-world execution.We turn innovation into
+              technology, and real-world execution. We turn innovation into
               scalable, revenue-generating business solutions for Pakistan’s
               industries.
             </p>
