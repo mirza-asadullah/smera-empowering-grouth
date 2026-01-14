@@ -263,17 +263,10 @@ export default function Services() {
             backgroundImage: `url(${ctaBg})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
-            margin: "80px 200px",
-            height: "100%",
-            width: "50%",
-            padding: "60px",
-            borderRadius: "8px",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
+
           }}
         >
+          <div className="cta-content">
           <h2 className="cta-title">Ready to Scale Your Business?</h2>
           <p className="cta-desc">
             Don't navigate the complex business landscape alone. Let SMERA be
@@ -282,6 +275,7 @@ export default function Services() {
           <div className="cta-buttons">
             <button className="btn-get-started">Get Started</button>
             <button className="btn-schedule">Schedule a Consultation</button>
+          </div>
           </div>
         </div>
       </section>

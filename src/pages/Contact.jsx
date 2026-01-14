@@ -27,7 +27,7 @@ export default function Contact() {
     <div className="contact-page">
       <section className="contact-section">
         <div className="container">
-          <h1 className="contact-title">CONTACT US</h1>
+          <div className="contact-title">CONTACT US</div>
 
           <form onSubmit={handleSubmit}>
             <div className="form-grid">

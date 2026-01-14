@@ -77,9 +77,12 @@ function Testimonials() {
       if (!sliderRef.current) return;
       const w = sliderRef.current.clientWidth;
       setSliderWidth(w);
-      const cw = Math.round(w * 0.6);
+      // Use the slider's measuring width to determine layout mode
+      // If slider is narrow (e.g. < 768px), we assume mobile/tablet view
+      const isSmall = w <= 768;
+      const cw = isSmall ? (w - 15) : Math.round(w * 0.6);
       setCardWidthPx(cw);
-      setGapPx(24);
+      setGapPx(isSmall ? 0 : 24);
     };
     measure();
     window.addEventListener("resize", measure);
@@ -148,6 +151,7 @@ function Testimonials() {
           ref={sliderRef}
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
+          style={{ overflow: 'hidden' }}
         >
           <div
             className="testimonials-track"

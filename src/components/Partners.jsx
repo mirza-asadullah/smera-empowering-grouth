@@ -7,7 +7,7 @@ import s4 from "../assets/s4.png";
 export default function Partners() {
   return (
     <section className="partners-section">
-      <div className="container">
+      <div className="containerp">
         <h2 className="partners-title">Our Partners</h2>
         <p className="partners-subtitle">
           Our skilled developers are trained on multiple stacks to bring you the
