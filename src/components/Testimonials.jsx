@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import sliderbg from "../assets/sliderbg.jpg";
 import ellipse from "../assets/ellipse.png";
 import vectorQuote from "../assets/slidercomma.png";
-import vector from "../assets/vector.png";
+import vector from "../assets/Vector.png";
 
 const testimonials = [
   {
