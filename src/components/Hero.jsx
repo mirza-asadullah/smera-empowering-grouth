@@ -2,16 +2,18 @@ import React from "react";
 import ourwork from "../assets/ourwork.png";
 import ourworkbg from "../assets/ourworkbg.png";
 import arrow from "../assets/arrow.png";
+import { usePopup } from "./ComingSoonPopup";
 
 function CTAs() {
+  const { openPopup } = usePopup();
   return (
     <div className="ctas">
-      <a className="btn btn-primary" href="#">
+      <button className="btn btn-primary" onClick={openPopup}>
         Explore Our Work
-      </a>
-      <a className="btn btn-secondary" href="#">
+      </button>
+      <button className="btn btn-secondary" onClick={openPopup}>
         Partner With SMERA
-      </a>
+      </button>
     </div>
   );
 }

@@ -1,7 +1,15 @@
 import React from "react";
 import skill1 from "../assets/skill1.png";
+import { usePopup } from "./ComingSoonPopup";
 
 export default function SmeraAcademy() {
+  const { openPopup } = usePopup();
+
+  const handleAction = (e) => {
+    e.preventDefault();
+    openPopup();
+  };
+
   return (
     <section className="academy-section">
       <div className="container academy-inner">
@@ -46,10 +54,10 @@ export default function SmeraAcademy() {
           </div>
 
           <div className="academy-actions">
-            <a href="#" className="btn btn-primary">
+            <a href="#" className="btn btn-primary" onClick={handleAction}>
               Enroll Now →
             </a>
-            <a href="#" className="btn btn-outline">
+            <a href="#" className="btn btn-outline" onClick={handleAction}>
               View Course Catalog
             </a>
           </div>

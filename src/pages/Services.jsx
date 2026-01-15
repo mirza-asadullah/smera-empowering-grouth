@@ -13,7 +13,11 @@ import sr4 from "../assets/sr4.png";
 import sr5 from "../assets/sr5.png";
 import ss from "../assets/ss.png";
 import ssbg from "../assets/ssbg.png";
+import { usePopup } from "../components/ComingSoonPopup";
+
 export default function Services() {
+  const { openPopup } = usePopup();
+
   return (
     <div className="services-page">
       {/* Hero Section */}
@@ -29,7 +33,7 @@ export default function Services() {
               Bridging entrepreneurial vision with operational reality through
               tools, technology, and execution.
             </p>
-            <button className="btn-services-explore">Explore Services →</button>
+            <button className="btn-services-explore" onClick={openPopup}>Explore Services →</button>
           </div>
           <div className="services-hero-right">
             <img src={service} alt="Services" className="services-hero-img" />
@@ -46,7 +50,7 @@ export default function Services() {
           </div>
           <h2 className="mission-title">
             From Vision to </h2> <h2 className="mission-title"><div className="accent-text">Execution</div></h2>
-         
+
           <p className="mission-desc">
             At SMERA, we bridge the gap between entrepreneurial vision and
             operational reality. We provide the tools, the technology, and the
@@ -250,7 +254,7 @@ export default function Services() {
               </div>
             </div>
 
-            <button className="btn-start-journey">Start Your Journey →</button>
+            <button className="btn-start-journey" onClick={openPopup}>Start Your Journey →</button>
           </div>
         </div>
       </section>
@@ -267,15 +271,15 @@ export default function Services() {
           }}
         >
           <div className="cta-content">
-          <h2 className="cta-title">Ready to Scale Your Business?</h2>
-          <p className="cta-desc">
-            Don't navigate the complex business landscape alone. Let SMERA be
-            your guide to industrial and commercial success.
-          </p>
-          <div className="cta-buttons">
-            <button className="btn-get-started">Get Started</button>
-            <button className="btn-schedule">Schedule a Consultation</button>
-          </div>
+            <h2 className="cta-title">Ready to Scale Your Business?</h2>
+            <p className="cta-desc">
+              Don't navigate the complex business landscape alone. Let SMERA be
+              your guide to industrial and commercial success.
+            </p>
+            <div className="cta-buttons">
+              <button className="btn-get-started" onClick={openPopup}>Get Started</button>
+              <button className="btn-schedule" onClick={openPopup}>Schedule a Consultation</button>
+            </div>
           </div>
         </div>
       </section>

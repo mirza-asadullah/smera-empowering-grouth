@@ -5,8 +5,21 @@ import twitter from "../assets/twitter.png";
 import instagram from "../assets/instagram.png";
 import linkedin from "../assets/linkedin.png";
 import searchbutton from "../assets/searchbutton.png";
+import { usePopup } from "./ComingSoonPopup";
 
 export default function Footer() {
+  const { openPopup } = usePopup();
+
+  const handleSocialClick = (e) => {
+    e.preventDefault();
+    openPopup();
+  };
+
+  const handleSubscribe = (e) => {
+    e.preventDefault();
+    openPopup();
+  };
+
   return (
     <footer className="footer">
       <div className="container footer-grid">
@@ -16,16 +29,16 @@ export default function Footer() {
             <img src={logo} alt="SMERA Logo" className="footer-logo" />
           </div>
           <div className="social-icons">
-            <a href="#" className="social-btn" aria-label="Facebook">
+            <a href="#" className="social-btn" aria-label="Facebook" onClick={handleSocialClick}>
               <img src={facebook} alt="facebook" className="social-img" />
             </a>
-            <a href="#" className="social-btn" aria-label="Twitter">
+            <a href="#" className="social-btn" aria-label="Twitter" onClick={handleSocialClick}>
               <img src={twitter} alt="twitter" className="social-img" />
             </a>
-            <a href="#" className="social-btn" aria-label="Instagram">
+            <a href="#" className="social-btn" aria-label="Instagram" onClick={handleSocialClick}>
               <img src={instagram} alt="instagram" className="social-img" />
             </a>
-            <a href="#" className="social-btn" aria-label="LinkedIn">
+            <a href="#" className="social-btn" aria-label="LinkedIn" onClick={handleSocialClick}>
               <img src={linkedin} alt="linkedin" className="social-img" />
             </a>
           </div>
@@ -63,17 +76,17 @@ export default function Footer() {
         {/* Subscribe Column */}
         <div className="footer-subscribe">
           <h4>Get the latest information</h4>
-          <div className="subscribe-form">
+          <form className="subscribe-form" onSubmit={handleSubscribe}>
             <input
               type="email"
               aria-label="Email address"
               placeholder="Email Address"
               className="subscribe-input"
             />
-            <button className="subscribe-btn" aria-label="Send">
+            <button type="submit" className="subscribe-btn" aria-label="Send">
               <img src={searchbutton} alt="send" className="send-img" />
             </button>
-          </div>
+          </form>
         </div>
       </div>
 
@@ -85,8 +98,8 @@ export default function Footer() {
               Copyright© 2025 SMERA. All Rights Reserved.
             </div>
             <div className="bottom-right">
-              <a href="#">User Terms &amp; Conditions</a>
-              <a href="#">Privacy Policy</a>
+              <a href="#" onClick={handleSocialClick}>User Terms &amp; Conditions</a>
+              <a href="#" onClick={handleSocialClick}>Privacy Policy</a>
             </div>
           </div>
         </div>
@@ -94,3 +107,4 @@ export default function Footer() {
     </footer>
   );
 }
+
