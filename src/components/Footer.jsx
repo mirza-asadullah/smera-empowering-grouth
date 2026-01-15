@@ -29,16 +29,36 @@ export default function Footer() {
             <img src={logo} alt="SMERA Logo" className="footer-logo" />
           </div>
           <div className="social-icons">
-            <a href="#" className="social-btn" aria-label="Facebook" onClick={handleSocialClick}>
+            <a
+              href="#"
+              className="social-btn"
+              aria-label="Facebook"
+              onClick={handleSocialClick}
+            >
               <img src={facebook} alt="facebook" className="social-img" />
             </a>
-            <a href="#" className="social-btn" aria-label="Twitter" onClick={handleSocialClick}>
+            <a
+              href="#"
+              className="social-btn"
+              aria-label="Twitter"
+              onClick={handleSocialClick}
+            >
               <img src={twitter} alt="twitter" className="social-img" />
             </a>
-            <a href="#" className="social-btn" aria-label="Instagram" onClick={handleSocialClick}>
+            <a
+              href="#"
+              className="social-btn"
+              aria-label="Instagram"
+              onClick={handleSocialClick}
+            >
               <img src={instagram} alt="instagram" className="social-img" />
             </a>
-            <a href="#" className="social-btn" aria-label="LinkedIn" onClick={handleSocialClick}>
+            <a
+              href="#"
+              className="social-btn"
+              aria-label="LinkedIn"
+              onClick={handleSocialClick}
+            >
               <img src={linkedin} alt="linkedin" className="social-img" />
             </a>
           </div>
@@ -98,8 +118,12 @@ export default function Footer() {
               Copyright© 2025 SMERA. All Rights Reserved.
             </div>
             <div className="bottom-right">
-              <a href="#" onClick={handleSocialClick}>User Terms &amp; Conditions</a>
-              <a href="#" onClick={handleSocialClick}>Privacy Policy</a>
+              <a href="#" onClick={handleSocialClick}>
+                User Terms &amp; Conditions
+              </a>
+              <a href="#" onClick={handleSocialClick}>
+                Privacy Policy
+              </a>
             </div>
           </div>
         </div>
@@ -107,4 +131,3 @@ export default function Footer() {
     </footer>
   );
 }
-

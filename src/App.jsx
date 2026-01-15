@@ -10,6 +10,7 @@ import ELearning from "./pages/ELearning";
 import "./index.css";
 import Footer from "./components/Footer";
 import { PopupProvider } from "./components/ComingSoonPopup";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
             </Routes>
           </main>
           <Footer />
+          <WhatsAppButton />
         </div>
       </Router>
     </PopupProvider>

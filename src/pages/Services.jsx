@@ -33,7 +33,9 @@ export default function Services() {
               Bridging entrepreneurial vision with operational reality through
               tools, technology, and execution.
             </p>
-            <button className="btn-services-explore" onClick={openPopup}>Explore Services →</button>
+            <button className="btn-services-explore" onClick={openPopup}>
+              Explore Services →
+            </button>
           </div>
           <div className="services-hero-right">
             <img src={service} alt="Services" className="services-hero-img" />
@@ -48,9 +50,10 @@ export default function Services() {
             {" "}
             <span className="mission-label">OUR MISSION</span>
           </div>
+          <h2 className="mission-title">From Vision to </h2>{" "}
           <h2 className="mission-title">
-            From Vision to </h2> <h2 className="mission-title"><div className="accent-text">Execution</div></h2>
-
+            <div className="accent-text">Execution</div>
+          </h2>
           <p className="mission-desc">
             At SMERA, we bridge the gap between entrepreneurial vision and
             operational reality. We provide the tools, the technology, and the
@@ -198,7 +201,12 @@ export default function Services() {
             <div className="roadmap-step">
               <div className="step-number"></div>
               <div className="step-content">
-                <div className="step-number" style={{ display: "flex", alignItems: "center" }}><div>01 &nbsp; &nbsp;</div> <h3>Discovery</h3></div>
+                <div
+                  className="step-number"
+                  style={{ display: "flex", alignItems: "center" }}
+                >
+                  <div>01 &nbsp; &nbsp;</div> <h3>Discovery</h3>
+                </div>
                 <p>We analyze your current business health or new idea.</p>
               </div>
               <div className="step-icon">
@@ -209,7 +217,12 @@ export default function Services() {
             <div className="roadmap-step">
               <div className="step-number"></div>
               <div className="step-content">
-                <div className="step-number" style={{ display: "flex", alignItems: "center" }}><div>02 &nbsp; &nbsp;</div> <h3>Strategy</h3></div>
+                <div
+                  className="step-number"
+                  style={{ display: "flex", alignItems: "center" }}
+                >
+                  <div>02 &nbsp; &nbsp;</div> <h3>Strategy</h3>
+                </div>
                 <p>
                   We build a roadmap tailored to your specific budget and goals.
                 </p>
@@ -220,9 +233,14 @@ export default function Services() {
             </div>
 
             <div className="roadmap-step">
-              <div className="step-number">     </div>
+              <div className="step-number"> </div>
               <div className="step-content">
-                <div className="step-number" style={{ display: "flex", alignItems: "center" }}><div>03 &nbsp; &nbsp;</div> <h3>Resource Acquisition</h3></div>
+                <div
+                  className="step-number"
+                  style={{ display: "flex", alignItems: "center" }}
+                >
+                  <div>03 &nbsp; &nbsp;</div> <h3>Resource Acquisition</h3>
+                </div>
                 <p>
                   We help you get the machinery, funds, and licenses required.
                 </p>
@@ -235,7 +253,12 @@ export default function Services() {
             <div className="roadmap-step">
               <div className="step-number"></div>
               <div className="step-content">
-                <div className="step-number" style={{ display: "flex", alignItems: "center" }}><div>04 &nbsp; &nbsp;</div> <h3>Implementation</h3></div>
+                <div
+                  className="step-number"
+                  style={{ display: "flex", alignItems: "center" }}
+                >
+                  <div>04 &nbsp; &nbsp;</div> <h3>Implementation</h3>
+                </div>
                 <p>We work alongside you to set up operations.</p>
               </div>
               <div className="step-icon">
@@ -246,7 +269,12 @@ export default function Services() {
             <div className="roadmap-step">
               <div className="step-number"> </div>
               <div className="step-content">
-                <div className="step-number" style={{ display: "flex", alignItems: "center" }}><div>05 &nbsp; &nbsp;</div> <h3>Scaling</h3></div>
+                <div
+                  className="step-number"
+                  style={{ display: "flex", alignItems: "center" }}
+                >
+                  <div>05 &nbsp; &nbsp;</div> <h3>Scaling</h3>
+                </div>
                 <p>Continuous support to expand your market share.</p>
               </div>
               <div className="step-icon">
@@ -254,7 +282,9 @@ export default function Services() {
               </div>
             </div>
 
-            <button className="btn-start-journey" onClick={openPopup}>Start Your Journey →</button>
+            <button className="btn-start-journey" onClick={openPopup}>
+              Start Your Journey →
+            </button>
           </div>
         </div>
       </section>
@@ -267,7 +297,6 @@ export default function Services() {
             backgroundImage: `url(${ctaBg})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
-
           }}
         >
           <div className="cta-content">
@@ -277,8 +306,12 @@ export default function Services() {
               your guide to industrial and commercial success.
             </p>
             <div className="cta-buttons">
-              <button className="btn-get-started" onClick={openPopup}>Get Started</button>
-              <button className="btn-schedule" onClick={openPopup}>Schedule a Consultation</button>
+              <button className="btn-get-started" onClick={openPopup}>
+                Get Started
+              </button>
+              <button className="btn-schedule" onClick={openPopup}>
+                Schedule a Consultation
+              </button>
             </div>
           </div>
         </div>
