@@ -1,10 +1,34 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import logo from "../assets/logo.png";
+import EmailIcon from '@mui/icons-material/Email';
+import PhoneIcon from '@mui/icons-material/Phone';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <header className="site-header">
+      <div className="top-bar">
+        <div className="top-bar-inner">
+          <div className="top-bar-item">
+            <EmailIcon sx={{ color: '#1ed07a', fontSize: '18px' }} />
+            <span>Farooq.omer26@yahoo.com</span>
+          </div>
+          <div className="top-bar-item">
+            <PhoneIcon sx={{ color: '#1ed07a', fontSize: '18px' }} />
+            <span>03456499964</span>
+          </div>
+          <a
+            href="https://www.linkedin.com/company/smera-small-mediam-enterprise-resource-and-assiatance"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="top-bar-item social-link"
+          >
+            <LinkedInIcon sx={{ color: '#1ed07a', fontSize: '20px' }} />
+          </a>
+        </div>
+      </div>
       <div className="heder-border">
         <div className="container-header header-inner">
           <div className="brand">
@@ -103,22 +127,22 @@ export default function Header() {
             >
               Services
             </NavLink>
-            <NavLink
+            {/* <NavLink
               to="/elearning"
               className={({ isActive }) =>
                 `nav-link ${isActive ? "active" : ""}`
               }
             >
               E-Learning Portal
-            </NavLink>
-            <NavLink
+            </NavLink> */}
+            {/* <NavLink
               to="/products"
               className={({ isActive }) =>
                 `nav-link ${isActive ? "active" : ""}`
               }
             >
               Products
-            </NavLink>
+            </NavLink> */}
             <NavLink to="/contact" className="btn btn-cta">
               Contact
             </NavLink>

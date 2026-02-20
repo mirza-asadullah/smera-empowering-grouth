@@ -4,15 +4,14 @@ import ourworkbg from "../assets/ourworkbg.png";
 import arrow from "../assets/arrow.png";
 import { usePopup } from "./ComingSoonPopup";
 
+import { useNavigate } from "react-router-dom";
+
 function CTAs() {
-  const { openPopup } = usePopup();
+  const navigate = useNavigate();
   return (
     <div className="ctas">
-      <button className="btn btn-primary" onClick={openPopup}>
-        Explore Our Work
-      </button>
-      <button className="btn btn-secondary" onClick={openPopup}>
-        Partner With SMERA
+      <button className="btn btn-primary" onClick={() => navigate('/contact')}>
+        Contact Us
       </button>
     </div>
   );
@@ -32,7 +31,7 @@ export default function Hero() {
         <div className=" hero-grid">
           <div className="hero-left">
             <h2 className="kicker">
-              SMERA Advancing Pakistan's SMEs Through Research & Innovation
+              SMERA - Small Medium Enterprise Resource and Assistance
             </h2>
             <p className="lead">
               A Research & Development–led SME Enablement Center transforming

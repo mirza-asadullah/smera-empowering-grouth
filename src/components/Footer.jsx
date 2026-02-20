@@ -54,10 +54,11 @@ export default function Footer() {
               <img src={instagram} alt="instagram" className="social-img" />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/company/smera-small-mediam-enterprise-resource-and-assiatance/"
               className="social-btn"
               aria-label="LinkedIn"
-              onClick={handleSocialClick}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <img src={linkedin} alt="linkedin" className="social-img" />
             </a>
@@ -77,9 +78,7 @@ export default function Footer() {
             <li>
               <a href="/services">Services</a>
             </li>
-            <li>
-              <a href="/products">Products</a>
-            </li>
+
           </ul>
         </div>
 
@@ -87,9 +86,9 @@ export default function Footer() {
         <div className="footer-contact">
           <h4>Contact</h4>
           <ul>
-            <li>+92 000 0000</li>
-            <li>smera@gmail.com</li>
-            <li>smera.com</li>
+            <li>03456499964</li>
+            <li><a href="mailto:smera@gmail.com">smera@gmail.com</a></li>
+            <li><a href="https://smera.pk">smera.pk</a></li>
           </ul>
         </div>
 

@@ -98,6 +98,9 @@ export default function Contact() {
                     <option value="regulatory">
                       Regulatory & Legal Compliance
                     </option>
+                     <option value="others">
+                     others
+                    </option>
                   </select>
                 </div>
                 <div className="form-group">

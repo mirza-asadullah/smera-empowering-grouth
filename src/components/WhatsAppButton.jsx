@@ -4,7 +4,7 @@ import whatsappIcon from "../assets/whattsapp.png";
 export default function WhatsAppButton() {
   const handleClick = () => {
     // Opens WhatsApp - you can customize this with your phone number
-    window.open("https://wa.me/", "_blank");
+    window.open("https://wa.me/923456499964", "_blank");
   };
 
   return (

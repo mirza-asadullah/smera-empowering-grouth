@@ -37,15 +37,10 @@ export default function About() {
           </div>
           <div className="about-right">
             <p className="about-desc">
-              SMERA is a Research & Development-driven SME advancement center
-              established through a strategic collaboration between Winvest and
-              Empire Lifestyle. We research, test, localize, and deploy modern
-              SME solutions that enhance productivity, reduce operational costs,
-              and enable sustainable industrial growth across Pakistan. By
-              combining applied research with on-ground implementation, SMERA
-              bridges the gap between theory and execution, helping SMEs
-              transition from labor-intensive models to technology-enabled,
-              future-ready enterprises.
+           SMERA – Small Medium Enterprise Resource and Assistance is dedicated to empowering small and medium enterprises by providing them with the tools, guidance, and resources they need to thrive.
+We believe that modern industrial development at small scale is the future of sustainable growth. Our mission is to support entrepreneurs and businesses by giving them access to cost-effective raw materials, technology solutions, and expert advisory services.
+Through our initiatives, we focus on promoting import alternative industries, About SMERA – Small Medium Enterprise Resource and Assistance
+SMERA is committed to driving industrial development in Pakistan by providing resources, guidance, and strategic support to small and medium enterprises. Our initiatives focus on building resilience, reducing dependency on imports, and creating globally competitive industries.
             </p>
             <div className="about-stats-grid">
               <div className="about-stat-item">

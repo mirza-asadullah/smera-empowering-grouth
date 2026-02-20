@@ -53,7 +53,57 @@ body {
 
 .site-header {
   background: black;
-  padding: 30px 0;
+  padding: 0;
+  /* Removed padding */
+}
+
+/* Top Bar Styles */
+.top-bar {
+  background: #0b0b0b;
+  /* Slightly different black or same */
+  border-bottom: 1px solid #2d2d2d;
+  padding: 8px 0;
+  font-size: 13px;
+  color: #ccc;
+}
+
+.top-bar-inner {
+  display: flex;
+  justify-content: flex-end;
+  /* Align to right */
+  align-items: center;
+  gap: 24px;
+  max-width: 95%;
+  /* Use a wide container */
+  margin: 0 auto;
+  padding: 0 0px;
+  /* Small padding on edges */
+}
+
+.top-bar-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.top-bar-item.social-link {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.2s;
+}
+
+.top-bar-item.social-link:hover {
+  opacity: 0.8;
+}
+
+/* Responsive adjustments for Top Bar */
+@media (max-width: 768px) {
+  .top-bar-inner {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 0 20px;
+  }
 }
 
 .heder-border {
@@ -69,7 +119,8 @@ body {
 }
 
 .logo {
-  height: 36px;
+  height: 60px;
+  width: 100%;
 }
 
 .brand {
@@ -99,10 +150,20 @@ body {
     Roboto,
     "Helvetica Neue",
     Arial;
+  transition: all 0.2s ease;
+  display: inline-block;
+  /* Required for transform */
+}
+
+
+.nav-link:hover {
+  color: var(--accent);
+  transform: scale(1.1);
 }
 
 .nav-link.active {
   color: var(--accent);
+  transform: scale(1.1);
 }
 
 .btn {
@@ -111,6 +172,7 @@ body {
   border-radius: 10px;
   text-decoration: none;
   font-weight: 700;
+  transition: all 0.2s ease;
 }
 
 .btn-cta {
@@ -119,6 +181,12 @@ body {
   padding: 10px 16px;
   border-radius: 12px;
   box-shadow: 0 6px 16px rgba(18, 60, 42, 0.45);
+}
+
+.btn-cta:hover {
+  filter: brightness(1.1);
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(18, 60, 42, 0.6);
 }
 
 .hero {
@@ -156,6 +224,8 @@ body {
   background-clip: text;
   color: transparent;
   font-weight: 800;
+  max-width: 700px;
+  /* Added max-width to control line breaks */
 }
 
 .lead {
@@ -176,13 +246,16 @@ body {
 .btn-secondary {
   padding: 14px 20px;
   border-radius: 8px;
-  min-width: 200px;
+  min-width: 150px;
   /* Equal width */
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-weight: bold;
+  cursor: pointer;
+  /* Added pointer cursor */
+  /* width: fit-content; - Removed fit-content to allow min-width to take effect */
 }
 
 .btn-primary {
@@ -191,6 +264,15 @@ body {
 
   color: #ffffff;
   /* Changed to white as requested */
+  transition: transform 0.2s ease;
+  /* Ensure smooth transition */
+}
+
+.btn-primary:hover {
+  transform: scale(1.1);
+  /* Enlarge on hover */
+  background: #008f5b;
+  /* Slightly darker on hover for feedback */
 }
 
 .btn-secondary {
@@ -556,7 +638,7 @@ body {
 }
 
 /* Make testimonials slider full-bleed to viewport edges */
-.testimonials-section .container > .testimonials-slider,
+.testimonials-section .container>.testimonials-slider,
 .testimonials-section .testimonials-slider {
   position: relative;
   width: 100vw;
@@ -571,7 +653,8 @@ body {
 }
 
 @media (max-width: 640px) {
-  .testimonials-section .container > .testimonials-slider,
+
+  .testimonials-section .container>.testimonials-slider,
   .testimonials-section .testimonials-slider {
     padding-left: 20px;
     padding-right: 20px;
@@ -759,11 +842,9 @@ body {
   right: 0;
   width: 200px;
   height: 200px;
-  background: linear-gradient(
-    135deg,
-    rgba(16, 185, 129, 0.59) 25%,
-    rgba(0, 0, 0, 0.59) 95.71%
-  );
+  background: linear-gradient(135deg,
+      rgba(16, 185, 129, 0.59) 25%,
+      rgba(0, 0, 0, 0.59) 95.71%);
 
   /* Updated to new color */
   border-radius: 0 0 0 100%;
@@ -1745,11 +1826,9 @@ body {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  background: radial-gradient(
-    circle,
-    rgba(30, 208, 122, 0.15) 0%,
-    rgba(0, 0, 0, 0.8) 70%
-  );
+  background: radial-gradient(circle,
+      rgba(30, 208, 122, 0.15) 0%,
+      rgba(0, 0, 0, 0.8) 70%);
   border: 2px solid var(--accent);
   display: flex;
   align-items: center;
@@ -2231,7 +2310,7 @@ body {
 }
 
 .product-card {
-  background: #fff;
+  background: #3e3e3e;
   border-radius: 12px;
   padding: 12px;
   display: flex;
@@ -2273,14 +2352,14 @@ body {
 .product-name {
   font-size: 22px;
   font-weight: 700;
-  color: #585858;
+  color: #ffffff;
   margin-bottom: 8px;
   line-height: 1.2;
 }
 
 .product-desc {
   font-size: 18px;
-  color: #767676;
+  color: #d8d5d5;
   line-height: 1.4;
   margin-bottom: 12px;
   flex: 1;
@@ -2398,11 +2477,9 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding: 30px 60px;
-  background: linear-gradient(
-    356.91deg,
-    rgba(7, 15, 12, 0.72) -196.38%,
-    rgba(1, 2, 2, 0.8) 97.06%
-  );
+  background: linear-gradient(356.91deg,
+      rgba(7, 15, 12, 0.72) -196.38%,
+      rgba(1, 2, 2, 0.8) 97.06%);
 }
 
 /* Countdown Timer */
@@ -3590,6 +3667,26 @@ body {
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 0.5px;
+}
+
+.product-price {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: var(--accent);
+  /* Green color */
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: auto;
+  text-align: left;
+  transition: opacity 0.2s;
+}
+
+.product-price:hover {
+  text-decoration: underline;
+  opacity: 0.8;
 }
 
 .close-btn {
