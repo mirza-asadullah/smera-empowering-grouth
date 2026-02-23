@@ -83,7 +83,7 @@ const PRODUCTS_DATA = [
     image: p4,
   },
   {
-    id: 1,
+    id: 9,
     name: "PVC Profile Extrusion Line",
     category: "Extrusion",
     price: "Request a quote",
@@ -92,7 +92,7 @@ const PRODUCTS_DATA = [
     image: p1,
   },
   {
-    id: 2,
+    id: 10,
     name: "Filament Extrusion Line",
     category: "Extrusion",
     price: "Request a quote",
@@ -101,7 +101,7 @@ const PRODUCTS_DATA = [
     image: p2,
   },
   {
-    id: 3,
+    id: 11,
     name: "PVC Granule Machine",
     category: "Recycling",
     price: "Request a quote",
@@ -110,7 +110,7 @@ const PRODUCTS_DATA = [
     image: p3,
   },
   {
-    id: 4,
+    id: 12,
     name: "Sliding Profile Machine",
     category: "Machinery",
     price: "Request a quote",
@@ -119,7 +119,7 @@ const PRODUCTS_DATA = [
     image: p4,
   },
   {
-    id: 5,
+    id: 13,
     name: "Pipe Bend Machine",
     category: "Machinery",
     price: "Request a quote",
@@ -128,7 +128,7 @@ const PRODUCTS_DATA = [
     image: p5,
   },
   {
-    id: 6,
+    id: 14,
     name: "Hydraulic Pipe Bender",
     category: "Machinery",
     price: "Request a quote",
@@ -137,7 +137,7 @@ const PRODUCTS_DATA = [
     image: p6,
   },
   {
-    id: 7,
+    id: 15,
     name: "Double Filament Line",
     category: "Recycling",
     price: "Request a quote",
@@ -146,7 +146,7 @@ const PRODUCTS_DATA = [
     image: p3,
   },
   {
-    id: 8,
+    id: 16,
     name: "PVC Pelletizing Line",
     category: "Recycling",
     price: "Request a quote",
@@ -155,7 +155,7 @@ const PRODUCTS_DATA = [
     image: p4,
   },
   {
-    id: 1,
+    id: 17,
     name: "PVC Profile Extrusion Line",
     category: "Extrusion",
     price: "Request a quote",
@@ -164,7 +164,7 @@ const PRODUCTS_DATA = [
     image: p1,
   },
   {
-    id: 2,
+    id: 18,
     name: "Filament Extrusion Line",
     category: "Extrusion",
     price: "Request a quote",
@@ -172,77 +172,72 @@ const PRODUCTS_DATA = [
       "Professional 3D Filament Extrusion Supplier serving designers, engineers, and scientists across diverse global industries.",
     image: p2,
   },
-  {
-    id: 3,
-    name: "PVC Granule Machine",
-    category: "Recycling",
-    price: "Request a quote",
-    description:
-      "A PET Bottle Flakes Pelletizing Line uses a twin-screw extruder to recycle washed PET flakes into high-quality PET pellets.",
-    image: p3,
-  },
-  {
-    id: 4,
-    name: "Sliding Profile Machine",
-    category: "Machinery",
-    price: "Request a quote",
-    description:
-      "Plastic Extrusion PVC UPVC Windows And Doors Profiles Manufacturer Prices PVC Sliding Extruder",
-    image: p4,
-  },
-  {
-    id: 5,
-    name: "Pipe Bend Machine",
-    category: "Machinery",
-    price: "Request a quote",
-    description:
-      "75-160mm Automatic PP PVC Pex Conduit Pipe Bending Bend Making Machine",
-    image: p5,
-  },
-  {
-    id: 6,
-    name: "Hydraulic Pipe Bender",
-    category: "Machinery",
-    price: "Request a quote",
-    description:
-      "Hydraulic Full Automatic Plastic 16-48mm PVC Tube Pipe Bending Bender Machine",
-    image: p6,
-  },
-  {
-    id: 7,
-    name: "Double Filament Line",
-    category: "Recycling",
-    price: "Request a quote",
-    description:
-      "A PET Bottle Flakes Pelletizing Line uses a twin-screw extruder to recycle washed PET flakes into high-quality PET pellets.",
-    image: p3,
-  },
-  {
-    id: 8,
-    name: "PVC Pelletizing Line",
-    category: "Recycling",
-    price: "Request a quote",
-    description:
-
-    "Soft Plastic PVC Resin Powder Pelletizing Machine Granulation Line",
-    image: p4,
-  },  ];
+  // {
+  //   id: 19,
+  //   name: "PVC Granule Machine",
+  //   category: "Recycling",
+  //   price: "Request a quote",
+  //   description:
+  //     "A PET Bottle Flakes Pelletizing Line uses a twin-screw extruder to recycle washed PET flakes into high-quality PET pellets.",
+  //   image: p3,
+  // },
+  // {
+  //   id: 20,
+  //   name: "Sliding Profile Machine",
+  //   category: "Machinery",
+  //   price: "Request a quote",
+  //   description:
+  //     "Plastic Extrusion PVC UPVC Windows And Doors Profiles Manufacturer Prices PVC Sliding Extruder",
+  //   image: p4,
+  // },
+  // {
+  //   id: 21,
+  //   name: "Pipe Bend Machine",
+  //   category: "Machinery",
+  //   price: "Request a quote",
+  //   description:
+  //     "75-160mm Automatic PP PVC Pex Conduit Pipe Bending Bend Making Machine",
+  //   image: p5,
+  // },
+  // {
+  //   id: 22,
+  //   name: "Hydraulic Pipe Bender",
+  //   category: "Machinery",
+  //   price: "Request a quote",
+  //   description:
+  //     "Hydraulic Full Automatic Plastic 16-48mm PVC Tube Pipe Bending Bender Machine",
+  //   image: p6,
+  // },
+  // {
+  //   id: 23,
+  //   name: "Double Filament Line",
+  //   category: "Recycling",
+  //   price: "Request a quote",
+  //   description:
+  //     "A PET Bottle Flakes Pelletizing Line uses a twin-screw extruder to recycle washed PET flakes into high-quality PET pellets.",
+  //   image: p3,
+  // },
+  // {
+  //   id: 24,
+  //   name: "PVC Pelletizing Line",
+  //   category: "Recycling",
+  //   price: "Request a quote",
+  //   description:
+  //     "Soft Plastic PVC Resin Powder Pelletizing Machine Granulation Line",
+  //   image: p4,
+  // },
+];
 
 import { useNavigate } from "react-router-dom";
 
 export default function Products() {
   const [searchTerm, setSearchTerm] = useState("");
-  const [activeCategory, setActiveCategory] = useState("");
   const navigate = useNavigate();
 
   const filteredProducts = PRODUCTS_DATA.filter((product) => {
-    const matchesSearch = product.name
+    return product.name
       .toLowerCase()
       .includes(searchTerm.toLowerCase());
-    const matchesCategory = activeCategory
-      ? product.category === activeCategory
-      : true;
-    return matchesSearch && matchesCategory;
   });
 
   return (
@@ -255,8 +250,6 @@ export default function Products() {
 
         {/* Controls */}
         <div className="products-controls">
-       
-
           {/* Search Bar */}
           <div className="search-wrapper">
             <input
@@ -268,9 +261,6 @@ export default function Products() {
             />
             <SearchIcon className="search-icon-mui" sx={{ fontSize: 20 }} />
           </div>
-
-          {/* Date/Sort */}
-     
         </div>
 
         {/* Product Grid */}
