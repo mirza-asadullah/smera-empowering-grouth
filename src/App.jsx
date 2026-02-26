@@ -11,11 +11,13 @@ import "./index.css";
 import Footer from "./components/Footer";
 import { PopupProvider } from "./components/ComingSoonPopup";
 import WhatsAppButton from "./components/WhatsAppButton";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   return (
     <PopupProvider>
       <Router>
+        <ScrollToTop />
         <div className="app-root">
           <Header />
           <main>

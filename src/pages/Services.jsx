@@ -55,10 +55,10 @@ export default function Services() {
             <div className="accent-text">Execution</div>
           </h2>
           <p className="mission-desc">
-           SMERA – Small Medium Enterprise Resource and Assistance is dedicated to empowering small and medium enterprises by providing them with the tools, guidance, and resources they need to thrive.
-We believe that modern industrial development at small scale is the future of sustainable growth. Our mission is to support entrepreneurs and businesses by giving them access to cost-effective raw materials, technology solutions, and expert advisory services.
-Through our initiatives, we focus on promoting import alternative industries, About SMERA – Small Medium Enterprise Resource and Assistance
-SMERA is committed to driving industrial development in Pakistan by providing resources, guidance, and strategic support to small and medium enterprises. Our initiatives focus on building resilience, reducing dependency on imports, and creating globally competitive industries.
+            SMERA – Small Medium Enterprise Resource and Assistance is dedicated to empowering small and medium enterprises by providing them with the tools, guidance, and resources they need to thrive.
+            We believe that modern industrial development at small scale is the future of sustainable growth. Our mission is to support entrepreneurs and businesses by giving them access to cost-effective raw materials, technology solutions, and expert advisory services.
+            Through our initiatives, we focus on promoting import alternative industries, About SMERA – Small Medium Enterprise Resource and Assistance
+            SMERA is committed to driving industrial development in Pakistan by providing resources, guidance, and strategic support to small and medium enterprises. Our initiatives focus on building resilience, reducing dependency on imports, and creating globally competitive industries.
           </p>
         </div>
       </section>
@@ -73,6 +73,7 @@ SMERA is committed to driving industrial development in Pakistan by providing re
               <div className="service-icon">
                 <img src={sr1} alt="Global Sourcing" />
               </div>
+              <span className="service-category">Global Sourcing</span>
               <h3>Global Sourcing & Machinery Import</h3>
               <p className="service-tagline">Bring World-Class Technology</p>
               <ul className="service-features">
@@ -87,6 +88,7 @@ SMERA is committed to driving industrial development in Pakistan by providing re
               <div className="service-icon">
                 <img src={sr2} alt="Strategic Foundation" />
               </div>
+              <span className="service-category">Strategic Foundation</span>
               <h3>Strategic Foundation</h3>
               <p className="service-tagline">Validate Before You Invest</p>
               <ul className="service-features">
@@ -101,6 +103,7 @@ SMERA is committed to driving industrial development in Pakistan by providing re
               <div className="service-icon">
                 <img src={sr3} alt="Financial Engineering" />
               </div>
+              <span className="service-category">Financial Engineering</span>
               <h3>Financial Engineering</h3>
               <p className="service-tagline">Bring World-Class Technology</p>
               <ul className="service-features">
@@ -115,6 +118,7 @@ SMERA is committed to driving industrial development in Pakistan by providing re
               <div className="service-icon">
                 <img src={sr4} alt="Growth & Export" />
               </div>
+              <span className="service-category">Growth & Export</span>
               <h3>Growth & Export Facilitation</h3>
               <p className="service-tagline">Bring World-Class Technology</p>
               <ul className="service-features">
@@ -129,6 +133,7 @@ SMERA is committed to driving industrial development in Pakistan by providing re
               <div className="service-icon">
                 <img src={sr5} alt="Regulatory & Legal" />
               </div>
+              <span className="service-category">Regulatory & Legal</span>
               <h3>Regulatory & Legal Compliance</h3>
               <p className="service-tagline">Bring World-Class Technology</p>
               <ul className="service-features">
