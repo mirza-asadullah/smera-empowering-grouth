@@ -9,18 +9,18 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Product/>
+      <Product />
       <WhySmera />
       {/* <SmeraAcademy /> */}
 
       <div
         style={{
-          backgroundColor: "black",
-          border: "1px solid black",
+          backgroundColor: "#F6F6F6",
+          border: "1px solid #F6F6F6",
           padding: "50px 0px 0px 0px",
         }}
       >
-        <Testimonials />
+        {/* <Testimonials /> */}
       </div>
     </>
   );

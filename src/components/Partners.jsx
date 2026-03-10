@@ -1,11 +1,13 @@
 import React from "react";
-import s1 from "../assets/s1.png";
-import s2 from "../assets/s2.png";
-import s3 from "../assets/s3.png";
-import s4 from "../assets/s4.png";
+import image1 from "../assets/companiesAffiliations/image1.png";
+import image2 from "../assets/companiesAffiliations/image2.png";
+import image3 from "../assets/companiesAffiliations/image3.png";
+import image4 from "../assets/companiesAffiliations/image4.png";
+import image5 from "../assets/companiesAffiliations/image5.png";
+import image6 from "../assets/companiesAffiliations/image6.png";
 
 export default function Partners() {
-  const logos = [s1, s2, s3, s4];
+  const logos = [image1, image2, image3, image4, image5, image6];
   // repeat logos three times to ensure content width exceeds container and loops seamlessly
   const items = [...logos, ...logos, ...logos];
 
@@ -14,8 +16,8 @@ export default function Partners() {
       <div className="containerp">
         <h2 className="partners-title">Our Partners</h2>
         <p className="partners-subtitle">
-          Our skilled developers are trained on multiple stacks to bring you the
-          best product & services.
+          Overseeing A Diverse Group Of Companies With A Commitment To Excellence, Efficiency, And Sustainable Expansion.
+
         </p>
         <div className="partners-logos-wrap">
           <div className="partners-logos">

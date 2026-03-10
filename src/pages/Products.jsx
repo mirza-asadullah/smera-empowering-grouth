@@ -14,7 +14,7 @@ const PRODUCTS_DATA = [
     id: 1,
     name: "PVC Profile Extrusion Line",
     category: "Extrusion",
-    price: "Request a quote",
+    price: "Ask for price",
     description:
       "Plastic PVC Profile Extrusion Extruder Making Machine Production Line To Make Wall Panel, Cladding, Fence, Window And Door Profile",
     image: p1,
@@ -23,7 +23,7 @@ const PRODUCTS_DATA = [
     id: 2,
     name: "Filament Extrusion Line",
     category: "Extrusion",
-    price: "Request a quote",
+    price: "Ask for price",
     description:
       "Professional 3D Filament Extrusion Supplier serving designers, engineers, and scientists across diverse global industries.",
     image: p2,
@@ -32,7 +32,7 @@ const PRODUCTS_DATA = [
     id: 3,
     name: "PVC Granule Machine",
     category: "Recycling",
-    price: "Request a quote",
+    price: "Ask for price",
     description:
       "A PET Bottle Flakes Pelletizing Line uses a twin-screw extruder to recycle washed PET flakes into high-quality PET pellets.",
     image: p3,
@@ -41,7 +41,7 @@ const PRODUCTS_DATA = [
     id: 4,
     name: "Sliding Profile Machine",
     category: "Machinery",
-    price: "Request a quote",
+    price: "Ask for price",
     description:
       "Plastic Extrusion PVC UPVC Windows And Doors Profiles Manufacturer Prices PVC Sliding Extruder",
     image: p4,
@@ -50,7 +50,7 @@ const PRODUCTS_DATA = [
     id: 5,
     name: "Pipe Bend Machine",
     category: "Machinery",
-    price: "Request a quote",
+    price: "Ask for price",
     description:
       "75-160mm Automatic PP PVC Pex Conduit Pipe Bending Bend Making Machine",
     image: p5,
@@ -59,7 +59,7 @@ const PRODUCTS_DATA = [
     id: 6,
     name: "Hydraulic Pipe Bender",
     category: "Machinery",
-    price: "Request a quote",
+    price: "Ask for price",
     description:
       "Hydraulic Full Automatic Plastic 16-48mm PVC Tube Pipe Bending Bender Machine",
     image: p6,
@@ -68,7 +68,7 @@ const PRODUCTS_DATA = [
     id: 7,
     name: "Double Filament Line",
     category: "Recycling",
-    price: "Request a quote",
+    price: "Ask for price",
     description:
       "A PET Bottle Flakes Pelletizing Line uses a twin-screw extruder to recycle washed PET flakes into high-quality PET pellets.",
     image: p3,
@@ -77,7 +77,7 @@ const PRODUCTS_DATA = [
     id: 8,
     name: "PVC Pelletizing Line",
     category: "Recycling",
-    price: "Request a quote",
+    price: "Ask for price",
     description:
       "Soft Plastic PVC Resin Powder Pelletizing Machine Granulation Line",
     image: p4,
@@ -86,7 +86,7 @@ const PRODUCTS_DATA = [
     id: 9,
     name: "PVC Profile Extrusion Line",
     category: "Extrusion",
-    price: "Request a quote",
+    price: "Ask for price",
     description:
       "Plastic PVC Profile Extrusion Extruder Making Machine Production Line To Make Wall Panel, Cladding, Fence, Window And Door Profile",
     image: p1,
@@ -95,7 +95,7 @@ const PRODUCTS_DATA = [
     id: 10,
     name: "Filament Extrusion Line",
     category: "Extrusion",
-    price: "Request a quote",
+    price: "Ask for price",
     description:
       "Professional 3D Filament Extrusion Supplier serving designers, engineers, and scientists across diverse global industries.",
     image: p2,
@@ -104,7 +104,7 @@ const PRODUCTS_DATA = [
     id: 11,
     name: "PVC Granule Machine",
     category: "Recycling",
-    price: "Request a quote",
+    price: "Ask for price",
     description:
       "A PET Bottle Flakes Pelletizing Line uses a twin-screw extruder to recycle washed PET flakes into high-quality PET pellets.",
     image: p3,
@@ -113,7 +113,7 @@ const PRODUCTS_DATA = [
     id: 12,
     name: "Sliding Profile Machine",
     category: "Machinery",
-    price: "Request a quote",
+    price: "Ask for price",
     description:
       "Plastic Extrusion PVC UPVC Windows And Doors Profiles Manufacturer Prices PVC Sliding Extruder",
     image: p4,
@@ -122,7 +122,7 @@ const PRODUCTS_DATA = [
     id: 13,
     name: "Pipe Bend Machine",
     category: "Machinery",
-    price: "Request a quote",
+    price: "Ask for price",
     description:
       "75-160mm Automatic PP PVC Pex Conduit Pipe Bending Bend Making Machine",
     image: p5,
@@ -131,7 +131,7 @@ const PRODUCTS_DATA = [
     id: 14,
     name: "Hydraulic Pipe Bender",
     category: "Machinery",
-    price: "Request a quote",
+    price: "Ask for price",
     description:
       "Hydraulic Full Automatic Plastic 16-48mm PVC Tube Pipe Bending Bender Machine",
     image: p6,
@@ -140,7 +140,7 @@ const PRODUCTS_DATA = [
     id: 15,
     name: "Double Filament Line",
     category: "Recycling",
-    price: "Request a quote",
+    price: "Ask for price",
     description:
       "A PET Bottle Flakes Pelletizing Line uses a twin-screw extruder to recycle washed PET flakes into high-quality PET pellets.",
     image: p3,
@@ -149,7 +149,7 @@ const PRODUCTS_DATA = [
     id: 16,
     name: "PVC Pelletizing Line",
     category: "Recycling",
-    price: "Request a quote",
+    price: "Ask for price",
     description:
       "Soft Plastic PVC Resin Powder Pelletizing Machine Granulation Line",
     image: p4,
@@ -158,7 +158,7 @@ const PRODUCTS_DATA = [
     id: 17,
     name: "PVC Profile Extrusion Line",
     category: "Extrusion",
-    price: "Request a quote",
+    price: "Ask for price",
     description:
       "Plastic PVC Profile Extrusion Extruder Making Machine Production Line To Make Wall Panel, Cladding, Fence, Window And Door Profile",
     image: p1,
@@ -167,7 +167,7 @@ const PRODUCTS_DATA = [
     id: 18,
     name: "Filament Extrusion Line",
     category: "Extrusion",
-    price: "Request a quote",
+    price: "Ask for price",
     description:
       "Professional 3D Filament Extrusion Supplier serving designers, engineers, and scientists across diverse global industries.",
     image: p2,
@@ -228,11 +228,23 @@ const PRODUCTS_DATA = [
   // },
 ];
 
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function Products() {
-  const [searchTerm, setSearchTerm] = useState("");
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const initialSearch = queryParams.get("search") || "";
+
+  const [searchTerm, setSearchTerm] = useState(initialSearch);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const q = new URLSearchParams(location.search).get("search");
+    if (q !== null) {
+      setSearchTerm(q);
+    }
+  }, [location.search]);
 
   const filteredProducts = PRODUCTS_DATA.filter((product) => {
     return product.name
@@ -257,7 +269,11 @@ export default function Products() {
               placeholder="Search by Name"
               className="search-input"
               value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
+              onChange={(e) => {
+                const val = e.target.value;
+                setSearchTerm(val);
+                navigate(`/products?search=${encodeURIComponent(val)}`, { replace: true });
+              }}
             />
             <SearchIcon className="search-icon-mui" sx={{ fontSize: 20 }} />
           </div>

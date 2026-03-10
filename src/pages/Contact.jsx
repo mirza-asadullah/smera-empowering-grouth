@@ -9,6 +9,7 @@ export default function Contact() {
     timeline: "",
     details: "",
   });
+  const [result, setResult] = useState("");
 
   const handleChange = (e) => {
     setFormData({
@@ -17,10 +18,25 @@ export default function Contact() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    // Handle form submission here
+    
+    const formDataObj = new FormData(e.target);
+    formDataObj.append("access_key", "83e2c97c-f09a-42ee-ac7e-d5d4a57bbc11");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formDataObj
+    });
+
+    const data = await response.json();
+    
+    if (data.success) {
+      setResult("Message sent successfully!");
+      setFormData({ name: "", email: "", phone: "", service: "", timeline: "", details: "" });
+    } else {
+      setResult("Failed to send message. Please try again.");
+    }
   };
 
   return (
@@ -120,6 +136,7 @@ export default function Contact() {
               <button type="submit" className="btn-submit">
                 Send
               </button>
+              {result && <p style={{ marginTop: '10px', color: result.includes('success') ? 'green' : 'red' }}>{result}</p>}
             </div>
           </form>
         </div>
