@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Hero />
       <Product />
-      <WhySmera />
+       <WhySmera /> 
       {/* <SmeraAcademy /> */}
 
       <div

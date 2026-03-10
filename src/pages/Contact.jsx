@@ -20,9 +20,12 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     const formDataObj = new FormData(e.target);
-    formDataObj.append("access_key", "83e2c97c-f09a-42ee-ac7e-d5d4a57bbc11");
+    formDataObj.append("access_key", "ee0116da-f25a-4543-9b61-bb6bd02e10b2");
+    // Add metadata for better email organization
+    formDataObj.append("from_name", formData.name);
+    formDataObj.append("subject", `New Inquiry - ${formData.service || 'General'}`);
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -30,7 +33,7 @@ export default function Contact() {
     });
 
     const data = await response.json();
-    
+
     if (data.success) {
       setResult("Message sent successfully!");
       setFormData({ name: "", email: "", phone: "", service: "", timeline: "", details: "" });
@@ -114,8 +117,8 @@ export default function Contact() {
                     <option value="regulatory">
                       Regulatory & Legal Compliance
                     </option>
-                     <option value="others">
-                     others
+                    <option value="others">
+                      others
                     </option>
                   </select>
                 </div>

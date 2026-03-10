@@ -134,48 +134,8 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Why Choose SMERA */}
-      <section className="why-choose-section">
-        <div className="container">
-          <h2 className="why-choose-title">
-            Why Choose <span className="accent-text">SMERA</span>?
-          </h2>
-          <p className="why-choose-subtitle">The private sector advantage</p>
-
-          <div className="comparison-table">
-            <div className="table-header">
-              <div className="col-feature">Feature</div>
-              <div className="col-public">Public Sector (SMEDA)</div>
-              <div className="col-smera">SMERA ADVANTAGE</div>
-            </div>
-
-            <div className="table-row">
-              <div className="col-feature">Speed</div>
-              <div className="col-public">Bureaucratic timelines & delays</div>
-              <div className="col-smera">Fast-track execution</div>
-            </div>
-
-            <div className="table-row">
-              <div className="col-feature">Personalization</div>
-              <div className="col-public">General solutions</div>
-              <div className="col-smera">Bespoke, tailored solutions</div>
-            </div>
-
-            <div className="table-row">
-              <div className="col-feature">Follow-through</div>
-              <div className="col-public">Policy-focused implementation</div>
-              <div className="col-smera">Hands-on, result-driven</div>
-            </div>
-
-            <div className="table-row">
-              <div className="col-feature">Network</div>
-              <div className="col-public">Limited government linkages</div>
-              <div className="col-smera">Global & private trade networks</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+     
+      
       {/* Success Roadmap */}
       <section
         className="roadmap-section"
@@ -289,9 +249,7 @@ export default function Services() {
               <button className="btn-get-started" onClick={openPopup}>
                 Get Started
               </button>
-              <button className="btn-schedule" onClick={openPopup}>
-                Schedule a Consultation
-              </button>
+             
             </div>
           </div>
         </div>
