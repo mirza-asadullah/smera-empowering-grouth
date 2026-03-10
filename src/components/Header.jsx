@@ -1,12 +1,48 @@
 import React, { useState } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useNavigate, useLocation } from "react-router-dom";
 import logo from "../assets/logo.png";
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import SearchIcon from '@mui/icons-material/Search';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      navigate(`/products?search=${encodeURIComponent(searchQuery)}`);
+      setMenuOpen(false);
+    }
+  };
+
+  const handleSearchChange = (e) => {
+    const val = e.target.value;
+    setSearchQuery(val);
+
+    if (location.pathname === '/products') {
+      navigate(`/products?search=${encodeURIComponent(val)}`, { replace: true });
+    }
+  };
+
+  // Sync the header's search bar with the URL if we are on the products page
+  React.useEffect(() => {
+    if (location.pathname === "/products") {
+      const q = new URLSearchParams(location.search).get("search");
+      if (q !== null) {
+        setSearchQuery(q);
+      } else {
+        setSearchQuery("");
+      }
+    } else {
+      // Clear search if navigating away from products (optional, but cleaner)
+      setSearchQuery("");
+    }
+  }, [location.search, location.pathname]);
   return (
     <header className="site-header">
       <div className="top-bar">
@@ -42,6 +78,20 @@ export default function Header() {
               />
             </Link>
           </div>
+
+          {/* Centered Desktop Search */}
+          <form onSubmit={handleSearch} className="header-search-form desktop-search-only">
+            <input
+              type="text"
+              placeholder="Search products..."
+              value={searchQuery}
+              onChange={handleSearchChange}
+              className="header-search-input"
+            />
+            <button type="submit" className="header-search-btn">
+              <SearchIcon sx={{ fontSize: 20 }} />
+            </button>
+          </form>
           <button
             type="button"
             className="menu-toggle md:hidden mr-3"
@@ -199,6 +249,18 @@ export default function Header() {
               >
                 Products
               </NavLink>
+              <form onSubmit={handleSearch} className="mobile-search-form">
+                <input
+                  type="text"
+                  placeholder="Search products..."
+                  value={searchQuery}
+                  onChange={handleSearchChange}
+                  className="mobile-search-input"
+                />
+                <button type="submit" className="mobile-search-btn">
+                  <SearchIcon sx={{ fontSize: 20 }} />
+                </button>
+              </form>
               <NavLink
                 to="/contact"
                 onClick={() => setMenuOpen(false)}

@@ -20,21 +20,16 @@ export default function WhySmera() {
                 Why <span className="accent-text">SMERA</span>?
               </h2>
               <p className="why-smera-desc">
-                SMERA is a forward-thinking R&D-driven SME Enablement Center
-                dedicated to empowering small and medium enterprises with
-                cutting-edge solutions. We bridge the gap between traditional
-                business practices and modern innovation — enabling digital
-                transformation, operational efficiency, and sustainable growth
-                for enterprises ready to scale.
+                You know your business inside and out, and at SMERA, we want to help you grow it. Think of us as your personal support team. By blending your hard-earned experience with modern digital upgrades, we give you the tools to stop stressing about daily hiccups and focus on your next big step.
               </p>
 
               <div className="why-smera-stats">
                 <div className="stat-item">
-                  <span className="stat-number">450+</span>
+                  <span className="stat-number">80+</span>
                   <span className="stat-label">Project Completed</span>
                 </div>
                 <div className="stat-item">
-                  <span className="stat-number">350+</span>
+                  <span className="stat-number">70+</span>
                   <span className="stat-label">Products we have</span>
                 </div>
               </div>

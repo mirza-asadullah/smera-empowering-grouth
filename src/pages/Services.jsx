@@ -30,8 +30,8 @@ export default function Services() {
               Pakistan's Economy
             </h1>
             <p className="services-hero-desc">
-              Bridging entrepreneurial vision with operational reality through
-              tools, technology, and execution.
+              Bridging your hard-earned experience with modern tools, technology, 
+              and execution to help your business thrive.
             </p>
             <button className="btn-services-explore" onClick={openPopup}>
               Explore Services →
@@ -55,10 +55,13 @@ export default function Services() {
             <div className="accent-text">Execution</div>
           </h2>
           <p className="mission-desc">
-            SMERA – Small Medium Enterprise Resource and Assistance is dedicated to empowering small and medium enterprises by providing them with the tools, guidance, and resources they need to thrive.
-            We believe that modern industrial development at small scale is the future of sustainable growth. Our mission is to support entrepreneurs and businesses by giving them access to cost-effective raw materials, technology solutions, and expert advisory services.
-            Through our initiatives, we focus on promoting import alternative industries, About SMERA – Small Medium Enterprise Resource and Assistance
-            SMERA is committed to driving industrial development in Pakistan by providing resources, guidance, and strategic support to small and medium enterprises. Our initiatives focus on building resilience, reducing dependency on imports, and creating globally competitive industries.
+            You know your business inside and out and at SMERA, our goal is simple: 
+            we want to help you make it even better. We deeply respect the sweat, 
+            hard work, and years of experience you've poured into your company. 
+            Think of us as your personal support team. We're here to blend your 
+            traditional practices with modern tools, digital upgrades, and practical, 
+            no-nonsense advice that makes your daily operations smoother and prepares 
+            your business for its next big step.
           </p>
         </div>
       </section>
@@ -75,11 +78,11 @@ export default function Services() {
               </div>
               <span className="service-category">Global Sourcing</span>
               <h3>Global Sourcing & Machinery Import</h3>
-              <p className="service-tagline">Bring World-Class Technology</p>
+              <p className="service-tagline">Getting the best tech, without the headache.</p>
               <ul className="service-features">
-                <li>International supplier identification</li>
-                <li>LC handling, customs clearance</li>
-                <li>End-to-end logistics, delivery</li>
+                <li>Finding the right international suppliers</li>
+                <li>Managing LC and bank paperwork</li>
+                <li>Customs clearance & direct delivery</li>
               </ul>
             </div>
 
@@ -90,11 +93,11 @@ export default function Services() {
               </div>
               <span className="service-category">Strategic Foundation</span>
               <h3>Strategic Foundation</h3>
-              <p className="service-tagline">Validate Before You Invest</p>
+              <p className="service-tagline">Test your ideas before you spend your money.</p>
               <ul className="service-features">
-                <li>Market-specific pre-feasibility</li>
+                <li>Honest market-specific checks</li>
                 <li>Bank-ready business plans</li>
-                <li>Risk assessment frameworks</li>
+                <li>Spotting risks before they cost you</li>
               </ul>
             </div>
 
@@ -103,13 +106,13 @@ export default function Services() {
               <div className="service-icon">
                 <img src={sr3} alt="Financial Engineering" />
               </div>
-              <span className="service-category">Financial Engineering</span>
+              <span className="service-category">Funding & Finance</span>
               <h3>Financial Engineering</h3>
-              <p className="service-tagline">Bring World-Class Technology</p>
+              <p className="service-tagline">Securing the capital you need to grow.</p>
               <ul className="service-features">
                 <li>SME loan facilitation</li>
-                <li>Equity & VC investment readiness</li>
-                <li>Cloud-based accounting & audit</li>
+                <li>Getting ready for outside investors</li>
+                <li>Simple, audit-ready accounting setups</li>
               </ul>
             </div>
 
@@ -120,27 +123,11 @@ export default function Services() {
               </div>
               <span className="service-category">Growth & Export</span>
               <h3>Growth & Export Facilitation</h3>
-              <p className="service-tagline">Bring World-Class Technology</p>
+              <p className="service-tagline">Taking your local products to the global market.</p>
               <ul className="service-features">
-                <li>Export readiness guidance</li>
-                <li>Market intelligence & demand insights</li>
-                <li>Digital transformation</li>
-              </ul>
-            </div>
-
-            {/* Service 5 */}
-            <div className="service-card">
-              <div className="service-icon">
-                <img src={sr5} alt="Regulatory & Legal" />
-              </div>
-              <span className="service-category">Regulatory & Legal</span>
-              <h3>Regulatory & Legal Compliance</h3>
-              <p className="service-tagline">Bring World-Class Technology</p>
-              <ul className="service-features">
-                <li>Company Registration (SECP)</li>
-                <li>Taxation services (NTN/tax/FBR)</li>
-                <li>Intellectual Property (Trademarks)</li>
-                <li>Legal protection</li>
+                <li>Step-by-step export guidance</li>
+                <li>Insights into international buyers</li>
+                <li>World-class digital upgrades</li>
               </ul>
             </div>
           </div>
@@ -192,11 +179,6 @@ export default function Services() {
       {/* Success Roadmap */}
       <section
         className="roadmap-section"
-        style={{
-          backgroundImage: `url(${ssbg})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
       >
         <div className="container roadmap-inner">
           <div className="roadmap-left">
@@ -296,14 +278,7 @@ export default function Services() {
 
       {/* CTA Section */}
       <section className="services-cta">
-        <div
-          className="container"
-          style={{
-            backgroundImage: `url(${ctaBg})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
+        <div className="container">
           <div className="cta-content">
             <h2 className="cta-title">Ready to Scale Your Business?</h2>
             <p className="cta-desc">

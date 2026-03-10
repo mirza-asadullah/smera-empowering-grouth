@@ -37,10 +37,10 @@ export default function About() {
           </div>
           <div className="about-right">
             <p className="about-desc">
-           SMERA – Small Medium Enterprise Resource and Assistance is dedicated to empowering small and medium enterprises by providing them with the tools, guidance, and resources they need to thrive.
-We believe that modern industrial development at small scale is the future of sustainable growth. Our mission is to support entrepreneurs and businesses by giving them access to cost-effective raw materials, technology solutions, and expert advisory services.
-Through our initiatives, we focus on promoting import alternative industries, About SMERA – Small Medium Enterprise Resource and Assistance
-SMERA is committed to driving industrial development in Pakistan by providing resources, guidance, and strategic support to small and medium enterprises. Our initiatives focus on building resilience, reducing dependency on imports, and creating globally competitive industries.
+              SMERA – Small Medium Enterprise Resource and Assistance is dedicated to empowering small and medium enterprises by providing them with the tools, guidance, and resources they need to thrive.
+              We believe that modern industrial development at small scale is the future of sustainable growth. Our mission is to support entrepreneurs and businesses by giving them access to cost-effective raw materials, technology solutions, and expert advisory services.
+              Through our initiatives, we focus on promoting import alternative industries, About SMERA – Small Medium Enterprise Resource and Assistance
+              SMERA is committed to driving industrial development in Pakistan by providing resources, guidance, and strategic support to small and medium enterprises. Our initiatives focus on building resilience, reducing dependency on imports, and creating globally competitive industries.
             </p>
             <div className="about-stats-grid">
               <div className="about-stat-item">
@@ -78,50 +78,49 @@ SMERA is committed to driving industrial development in Pakistan by providing re
 
       {/* Mission & Vision Section */}
       <section className="mission-vision-section">
-        <div className="container">
-          <div className="mission-vision-card">
-            <h2 className="mission-vision-title">Mission & Vision</h2>
-            <div className="mission-vision-grid">
-              <div className="mv-card">
-                <div className="mv-icon">
-                  <img src={mission1} alt="Mission" />
-                </div>
-                <h3>Our Mission</h3>
-                <p>
-                  We empower businesses with smart, innovative solutions.Through
-                  learning, technology, and global collaboration, we deliver
-                  lasting value and help clients succeed.
-                </p>
-              </div>
-              <div className="mv-card">
-                <div className="mv-icon">
-                  <img src={mission2} alt="Vision" />
-                </div>
-                <h3>Our Vision</h3>
-                <p>
-                  To be a trusted global tech leader, transforming industries
-                  through innovation and empowering teams to create lasting
-                  impact. We aim to set new standards by uniting people, ideas,
-                  and technology for a smarter future.
-                </p>
-              </div>
-            </div>
+  <div className="container">
+    <div className="mission-vision-card">
+      <h2 className="mission-vision-title">What Drives SMERA</h2>
+      <div className="mission-vision-grid">
+        <div className="mv-card">
+          <div className="mv-icon">
+            <img src={mission1} alt="Our Mission" />
           </div>
+          <h3>Our Mission</h3>
+          <p>
+            We empower local businesses by bringing world-class technology straight 
+            to the factory floor. Through smart tools and practical guidance, we turn 
+            your everyday operations into a competitive advantage.
+          </p>
         </div>
-      </section>
+        <div className="mv-card">
+          <div className="mv-icon">
+            <img src={mission2} alt="Our Vision" />
+          </div>
+          <h3>Our Vision</h3>
+          <p>
+            To transform local manufacturing into a globally competitive powerhouse. 
+            We are building a future where small and medium enterprises lead the 
+            market through innovation, smart tech, and lasting impact.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Our Partners Section */}
 
       <Partners />
       <div
         style={{
-          backgroundColor: "black",
-          border: "1px solid black",
+          backgroundColor: "#F6F6F6",
+          border: "1px solid #F6F6F6",
           padding: "50px 0px 0px 0px",
         }}
       >
         {" "}
-        <Testimonials />
+        {/* <Testimonials /> */}
       </div>
     </div>
   );
