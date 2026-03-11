@@ -2961,7 +2961,7 @@ body {
 
 .mission-vision-section {
 
-  padding: 20px 0 80px;
+  padding: 0px 0 80px;
 
   background: #F6F6F6;
 
@@ -3083,7 +3083,7 @@ body {
 
 .partners-section {
 
-  padding: 20px 0px;
+  padding: 0px 0px;
 
   background: #F6F6F6;
 
@@ -4365,8 +4365,6 @@ body {
 
     padding: 0px 0 40px;
 
-    background: #000;
-
   }
 
 
@@ -4659,7 +4657,7 @@ body {
 
     padding: 40px 0;
 
-    background: linear-gradient(90.05deg, #000000 0.03%, #0d110f 99.95%);
+    
 
   }
 
@@ -6711,7 +6709,7 @@ body {
 
   .partners-section {
 
-    padding: 60px 0 60px 0px;
+    padding: 0px 0 0px 0px;
 
     background: #F6F6F6;
 
@@ -8482,7 +8480,7 @@ input:-webkit-autofill:active {
 
 /* ===== Partners Section ===== */
 .partners-section {
-  padding: 80px 0;
+  padding: 0px 0;
   overflow: hidden;
 }
 
@@ -8549,7 +8547,7 @@ input:-webkit-autofill:active {
 
 @media (max-width: 768px) {
   .partners-section {
-    padding: 60px 0;
+    padding: 20px 0;
   }
 
   .partners-title {
